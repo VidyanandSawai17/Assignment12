@@ -20,7 +20,10 @@ namespace Assignment12
             this.basic = basic;
         }
 
-        public virtual void CalculateSalary()
+        public virtual void CalculateSalary()       // Virtual → we will add virtual keyword to the base class method
+
+                                                    // Virtual keyword allow method to be overridden
+
         {
             hra = basic * 0.40;
             da = basic * 0.20;
@@ -42,7 +45,9 @@ namespace Assignment12
         {
 
         }
-        public override void CalculateSalary()
+        public override void CalculateSalary()     // Override – > to the derived class method
+                                                   // To override the same method in the base class
+
         {
             hra = basic * 0.40;
             da = basic * 0.20;
